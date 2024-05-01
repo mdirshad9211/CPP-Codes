@@ -7,14 +7,21 @@ int sum(int num1, int num2){
     int sum = num1+ num2;
     return sum;
 }
+//Function Overloading
+int sum(int num1, int num2, int num3){
+    int sum = num1+ num2 + num3;
+    return sum;
+}
 
 int main(){
 
     int num1 =14;
     int num2 = 35;
+    int num3 = 13;
 
-    int total = sum(num1, num2);
-    cout<<total;
+    cout<<sum(num1, num2)<<endl;
+    cout<<sum(num1, num2,num3);
+    
 
     return 0;
 }
